@@ -1,23 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Hello, Welcome to Chad Svastisalee's Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-<body>
-<header>
-      <span class="logo">My Website</span>
-      <a id="toggleMenu">Menu</a>
-      <nav>
-        <ul>
-          <li><a href="index.php">Home</a></li>
-          <li><a href="resume.php">Resume</a></li>
-          <li><a href="contact.php">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-<h1>Chad Svastisalee</h1>
+<?php
+$meta=[];
+$meta['title']='Chad Svastisalee';
+$meta['description']='Chad Svastisalee Graphic Designer, Web Developer, Project Manager';
+$meta['keywords']='Chad Svastisalee, Creative, Designer, Director, Mobile Developer';
+
+$content =<<<EOT
+
+    <h1>Chad Svastisalee</h1>
 <div>
   <a href="https://www.linkedin.com/in/chadsvastisalee" target="_blank" rel="noopener">LinkedIn</a>
   &#x25CF;
@@ -71,5 +60,6 @@ MicroTrain Technologies – Chicago, IL</p>
 <main>
 
 </main>
-</body>
-</html>
+EOT;
+
+include '../core/layout.php';
