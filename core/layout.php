@@ -17,21 +17,35 @@
 
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="css/dist/main/css">
+  <link rel="stylesheet" type="text/css" href="/dist/css/main.min.css">
 </head>
 <body>
 <header>
-  <span class="logo">My Website</span>
+  <span class="logo">Chad Svastisalee</span>
   <a id="toggleMenu">Menu</a>
   <nav>
     <ul>
-      <li><a href="index.php">Home</a></li>
-      <li><a href="resume.php">Resume</a></li>
-      <li><a href="contact.php">Contact</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/resume.php">Resume</a></li>
+      <li><a href="/contact.php">Contact</a></li>
+      <li><a href="/posts">Blog</a></li>
     </ul>
   </nav>
 </header>
 <main>
+<script>
+    var toggleMenu = document.getElementById('toggleMenu');
+    var nav = document.querySelector('nav');
+    toggleMenu.addEventListener('click', function(){
+            if(nav.style.display=='block'){
+                nav.style.display='none';
+            }else{
+                nav.style.display='block';
+            }
+        }
+    );
+</script>
+
 <?php
 echo $content;
 echo (!empty($message)?$message:null); 

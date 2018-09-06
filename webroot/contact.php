@@ -6,26 +6,26 @@ $content = <<<EOT
         
   <input type="hidden" name="subject" value="New submission!">
   
-  <div>
-    <label for="name">Name</label>
+  <div class="form-control">
+  <label for="name">Name</label>
     <input id="name" type="text" name="name" value="{$valid->userInput('name')}">
     <div class="text-error">{$valid->error('name')}</div>
   </div>
 
-  <div>
-    <label for="email">Email</label>
+  <div class="form-control">
+  <label for="email">Email</label>
     <input id="email" type="text" name="email" value="{$valid->userInput('email')}">
     <div class="text-error">{$valid->error('email')}</div>
   </div>
 
-  <div>
-    <label for="message">Message</label>
+  <div class="form-control">
+  <label for="message">Message</label>
     <textarea id="message" name="message">{$valid->userInput('message')}</textarea>
     <div class="text-error">{$valid->error('message')}</div>
   </div>
 
-  <div>
-    <input type="submit" value="Send">
+  <div class="form-control">
+  <input type="submit" value="Send">
   </div>
 
 </form>
